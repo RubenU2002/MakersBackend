@@ -18,7 +18,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Register application services and repositories
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<ILoanService, LoanService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILoanRepository, LoanRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
